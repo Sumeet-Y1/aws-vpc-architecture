@@ -1,6 +1,6 @@
 # 🌐 AWS VPC Architecture
 
-> Production-grade 3-tier VPC architecture on AWS — public and private subnets across 2 Availability Zones, with NAT Gateway, Bastion Host, ALB, and RDS MySQL. All provisioned as code with Terraform.
+> Production-grade 3-tier VPC architecture on AWS  public and private subnets across 2 Availability Zones, with NAT Gateway, Bastion Host, ALB, and RDS MySQL. All provisioned as code with Terraform.
 
 ---
 
@@ -15,7 +15,7 @@
                     └──────────┬──────────┘
                                │
           ┌────────────────────▼────────────────────┐
-          │           VPC — 10.0.0.0/16             │
+          │           VPC - 10.0.0.0/16             │
           │                                          │
           │  ┌─────────────────────────────────┐    │
           │  │     PUBLIC SUBNETS               │    │
@@ -87,9 +87,9 @@ App SG → RDS SG (port 3306 only from App)
 
 ---
 
-## 🔑 Bastion Host — SSH Jump
+## 🔑 Bastion Host SSH Jump
 
-The app server has no public IP — only reachable via Bastion:
+The app server has no public IP only reachable via Bastion:
 
 ```bash
 # Step 1: Connect to Bastion (public subnet)
@@ -176,4 +176,4 @@ cd terraform && terraform destroy
 
 ## 👤 Author
 
-**Sumeet** — [GitHub](https://github.com/Sumeet-Y1)
+**Sumeet** - [GitHub](https://github.com/Sumeet-Y1)
