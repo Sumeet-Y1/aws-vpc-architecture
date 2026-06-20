@@ -85,6 +85,10 @@ App SG → RDS SG (port 3306 only from App)
 
 ![AWS VPC Architecture](assets/vpc-diagram.png)
 
+> ⚠️ **Note:** Infrastructure is temporarily destroyed to avoid AWS costs. 
+> The ALB URL in the screenshot is no longer active. 
+> Run `terraform apply` to spin everything back up in ~5 minutes.
+
 ---
 
 ## 🔑 Bastion Host SSH Jump
